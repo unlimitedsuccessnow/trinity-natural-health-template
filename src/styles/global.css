@@ -1331,12 +1331,7 @@ strong {
     }
 
     .trust-badges {
-        gap: 0.5rem;
-    }
-
-    .badge {
-        font-size: 0.75rem;
-        padding: 0.4rem 0.75rem;
+        display: none;
     }
 
     .hero-cta-group {

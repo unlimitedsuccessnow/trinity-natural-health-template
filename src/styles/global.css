@@ -9,10 +9,10 @@
 
 :root {
     /* Brand Colors - Whole Health Journal */
-    --primary-color: #0061e8;      /* Bright blue - primary brand */
-    --primary-dark: #0050c4;       /* Darker blue */
-    --primary-light: #3381ed;      /* Lighter blue */
-    --secondary-color: #0061e8;    /* Bright blue - secondary brand */
+    --primary-color: #0052cc;      /* Deep blue - primary brand */
+    --primary-dark: #003d99;       /* Darker blue */
+    --primary-light: #0066ff;      /* Lighter blue */
+    --secondary-color: #0052cc;    /* Deep blue - secondary brand */
     --accent-color: #FFA726;       /* Warm orange accent - CTA */
 
     /* Neutral Colors */
@@ -1064,7 +1064,7 @@ strong {
    ======================================== */
 
 .cta-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, #002d66 0%, #001a3d 100%);
     color: var(--background-white);
     padding: 5rem 0;
 }
@@ -1215,7 +1215,7 @@ strong {
    ======================================== */
 
 .site-footer {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+    background: linear-gradient(135deg, #001a3d 0%, #000f26 100%);
     color: var(--background-light);
     padding: var(--spacing-xl) 0 var(--spacing-md);
 }

@@ -10,6 +10,14 @@
         "PERPLEXITY_DEFAULT_MODEL": "sonar-pro",
         "PERPLEXITY_MAX_TOKENS": "2048"
       }
+    },
+    "apify": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server"],
+      "env": {
+        "APIFY_TOKEN": "apify_api_bn6hf5yjEq4rgfy1O70gq17jfjZ3Zq3Zz5vY"
+      }
     }
   }
 }

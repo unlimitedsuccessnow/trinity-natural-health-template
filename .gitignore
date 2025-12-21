@@ -1,5 +1,6 @@
 # MCP Configuration (contains API keys)
 cursor-mcp-config.json
+cursor-mcp-config.json.example
 *.mcp.json
 
 # Environment files
@@ -24,5 +25,6 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
+
 
 

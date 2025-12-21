@@ -1,6 +1,8 @@
-# Quick Perplexity MCP Setup
+# Quick MCP Setup Guide
 
-## Fast Setup (5 minutes)
+This guide covers quick setup for Perplexity and Apify MCP servers.
+
+## Perplexity MCP Setup (5 minutes)
 
 ### 1. Get Your API Key
 - Go to: https://www.perplexity.ai/account/api/group
@@ -81,5 +83,109 @@ Once set up, you can:
   4. Checked Cursor's MCP logs for errors
 
 For detailed instructions, see `PERPLEXITY_MCP_SETUP.md`
+
+---
+
+## Apify MCP Setup (5 minutes)
+
+### 1. Get Your API Token
+- Go to: https://console.apify.com/account/integrations
+- Click "Create new token"
+- Copy it (you'll only see it once!)
+
+### 2. Install Node.js (if needed)
+- Check: `node --version` in terminal
+- If not installed: https://nodejs.org/
+
+### 3. Configure in Cursor
+
+**Method 1: Through Cursor Settings**
+1. Open Cursor
+2. Press `Ctrl+,` (Windows) or `Cmd+,` (Mac) to open Settings
+3. Search for "MCP" or "Model Context Protocol"
+4. Click "Edit MCP Settings" or find the MCP configuration option
+5. Add the Apify configuration from `cursor-mcp-config.json.example`
+6. Replace `YOUR_APIFY_API_TOKEN_HERE` with your actual API token
+7. Save and restart Cursor
+
+**Method 2: Direct File Edit**
+1. Navigate to Cursor's settings directory:
+   - **Windows**: `%APPDATA%\Cursor\User\settings.json` or look for MCP config
+   - **Mac**: `~/Library/Application Support/Cursor/User/settings.json`
+   - **Linux**: `~/.config/Cursor/User/settings.json`
+2. Add the MCP server configuration (see `cursor-mcp-config.json.example`)
+3. Save and restart Cursor
+
+### 4. Verify Setup
+- Restart Cursor
+- Check if Apify MCP tools are available
+- Try: "Use Apify to scrape data from a website"
+
+## Configuration Template
+
+Copy this into your Cursor MCP settings (adds both Perplexity and Apify):
+
+```json
+{
+  "mcpServers": {
+    "perplexity": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@perplexity-ai/mcp-server"],
+      "env": {
+        "PERPLEXITY_API_KEY": "YOUR_API_KEY_HERE",
+        "PERPLEXITY_RETURN_IMAGES": "true",
+        "PERPLEXITY_DEFAULT_MODEL": "sonar-pro"
+      }
+    },
+    "apify": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server"],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_API_TOKEN_HERE"
+      }
+    }
+  }
+}
+```
+
+**Remember**: Replace both `YOUR_API_KEY_HERE` and `YOUR_APIFY_API_TOKEN_HERE` with your actual credentials!
+
+## Usage Examples
+
+### Perplexity MCP
+1. **Capture screenshot**:
+   ```
+   Use Firecrawl to take a full-page screenshot of https://example.com
+   ```
+
+2. **Analyze for conversion optimization**:
+   ```
+   Use Perplexity to analyze this screenshot and provide a website conversion optimization review
+   ```
+
+### Apify MCP
+1. **Scrape website data**:
+   ```
+   Use Apify to scrape product information from https://example.com/products
+   ```
+
+2. **Extract links**:
+   ```
+   Use Apify to extract all links from https://example.com
+   ```
+
+## Troubleshooting
+
+- **Not working?** Make sure you:
+  1. Restarted Cursor completely
+  2. Have Node.js installed
+  3. API keys/tokens are correct (no extra spaces)
+  4. Checked Cursor's MCP logs for errors
+
+For detailed instructions:
+- Perplexity: See `PERPLEXITY_MCP_SETUP.md`
+- Apify: See `APIFY_MCP_SETUP.md`
 
 

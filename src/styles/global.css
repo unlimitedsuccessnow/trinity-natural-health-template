@@ -9,11 +9,11 @@
 
 :root {
     /* Brand Colors - Whole Health Journal */
-    --primary-color: #480266;      /* Deep purple - primary brand */
-    --primary-dark: #3a0251;       /* Darker purple */
-    --primary-light: #7303a3;      /* Lighter purple/violet */
-    --secondary-color: #7303a3;    /* Violet - secondary brand */
-    --accent-color: #facd46;       /* Gold/yellow accent - CTA */
+    --primary-color: #0A4A7D;      /* Deep blue - primary brand */
+    --primary-dark: #083A61;       /* Darker blue */
+    --primary-light: #1565A3;      /* Lighter blue */
+    --secondary-color: #1976D2;    /* Bright blue - secondary brand */
+    --accent-color: #FFA726;       /* Warm orange accent - CTA */
 
     /* Neutral Colors */
     --text-dark: #1c1c1c;
@@ -30,7 +30,7 @@
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
     /* Spacing */
     --spacing-xs: 0.5rem;

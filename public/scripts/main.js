@@ -199,12 +199,9 @@
     // LAZY LOADING IMAGES (if needed)
     // ========================================
 
-    if ('loading' in HTMLImageElement.prototype) {
-        const images = document.querySelectorAll('img[loading="lazy"]');
-        images.forEach(img => {
-            img.src = img.dataset.src;
-        });
-    } else {
+    // Modern browsers support native lazy loading via loading="lazy" attribute
+    // No additional JavaScript needed - the browser handles it automatically
+    if (!('loading' in HTMLImageElement.prototype)) {
         // Fallback for browsers that don't support lazy loading
         const script = document.createElement('script');
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';

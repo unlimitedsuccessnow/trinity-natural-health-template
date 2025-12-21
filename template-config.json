@@ -1,0 +1,156 @@
+{
+  "templateVersion": "1.0",
+  "service": {
+    "name": "Physical Therapy",
+    "slug": "physical-therapy",
+    "type": "rehabilitative treatment",
+    "primaryApproach": "exercises, manual therapy, and movement training",
+    "commonUses": [
+      "injury recovery",
+      "chronic pain management",
+      "mobility improvement",
+      "post-surgical rehabilitation"
+    ],
+    "sessionDuration": "30-60 minutes",
+    "sessionFrequency": "2-3 times per week",
+    "typicalProgramDuration": "4-12 weeks",
+    "costPerSession": "$75-150",
+    "typicalProgramCost": "$500-2,000",
+    "insuranceCoverage": "Often covered by insurance",
+    "limitations": [
+      "Requires active participation and exercises",
+      "Multiple sessions needed over weeks or months",
+      "May not address underlying cellular issues",
+      "Can cause temporary muscle soreness"
+    ],
+    "bestFor": "Specific injury rehabilitation",
+    "painLevel": "May cause temporary discomfort",
+    "timeToResults": "4-12 weeks typically",
+    "sideEffects": "Muscle soreness, fatigue",
+    "scenariosWhereBetter": [
+      "Need specific movement retraining after surgery",
+      "Insurance requires PT for coverage",
+      "Prefer an active, exercise-based approach"
+    ]
+  },
+  "keywords": {
+    "primaryKeyword": "alternative to physical therapy perrysburg",
+    "secondaryKeywords": [
+      "natural alternative to physical therapy",
+      "EES vs physical therapy",
+      "energy healing vs physical therapy perrysburg"
+    ],
+    "comparisonKeywords": [
+      "EES vs physical therapy",
+      "physical therapy vs energy enhancement system",
+      "alternative to physical therapy",
+      "natural alternative to PT"
+    ],
+    "primaryBenefit": "pain relief and recovery",
+    "benefit1": "chronic pain relief",
+    "benefit2": "improved mobility",
+    "benefit3": "faster healing",
+    "commonLimitation": "repeated appointments and exercises"
+  },
+  "ees": {
+    "name": "Energy Enhancement System",
+    "abbreviation": "EES",
+    "technologyType": "scalar wave technology",
+    "inventor": "Dr. Sandra Rose Michael",
+    "approach": "Cellular-level energy healing",
+    "sessionDuration": "1-2 hours (minimum)",
+    "sessionFrequency": "As needed, cumulative benefits",
+    "participationRequired": false,
+    "painDuringTreatment": "None (completely relaxing)",
+    "timeToResults": "Immediate to gradual",
+    "costPerHour": "$50",
+    "minimumSession": "2 hours",
+    "newCustomerSpecial": "Buy 1 hour, get 1 hour FREE ($50 for 2 hours)",
+    "starterMembership": "$299/month for 10 hours",
+    "insuranceCoverage": "Not typically covered",
+    "sideEffects": "None reported",
+    "scientificBacking": "NASA research on DNA repair and telomere lengthening",
+    "keyBenefits": [
+      "Cellular-level healing",
+      "Non-invasive",
+      "Cumulative benefits",
+      "Whole-body approach",
+      "Drug-free"
+    ]
+  },
+  "location": {
+    "businessName": "Trinity Natural Health",
+    "address": "842 W South Boundary",
+    "city": "Perrysburg",
+    "state": "OH",
+    "zip": "43551",
+    "phone": "419-654-6609",
+    "email": "anna@healwithtrinity.com",
+    "website": "HealWithTrinity.com",
+    "nearbyCities": [
+      "Toledo (15 minutes)",
+      "Maumee (10 minutes)",
+      "Rossford (8 minutes)",
+      "Bowling Green (20 minutes)"
+    ],
+    "serviceRadius": "20 miles",
+    "yearsInBusiness": "3+",
+    "mediaFeatures": ["NBC", "Yahoo", "FOX"]
+  },
+  "seo": {
+    "titleTemplate": "{Service} Alternative in {City}, {State} | Energy Enhancement System vs {Service}",
+    "metaDescriptionTemplate": "Discover why Energy Enhancement System may be a better alternative to {service} in {city}. Compare EES vs {service}, costs, benefits, and see real results. Book your first session for $50.",
+    "h1Template": "{Service} Alternative in {City}: Why Energy Enhancement System May Be Better",
+    "urlPattern": "/alternative-to-{service-slug}-{city-slug}"
+  },
+  "testimonials": [
+    {
+      "name": "Sarah T.",
+      "location": "Perrysburg, OH",
+      "condition": "Chronic back pain",
+      "result": "Significant pain reduction after 3 sessions",
+      "quote": "I had been going to physical therapy for my chronic back pain for months with minimal improvement. A friend recommended Trinity Natural Health's EES therapy. After just three sessions, I experienced more relief than I had in months of PT. The fact that I can just relax during the sessions instead of doing painful exercises is amazing."
+    },
+    {
+      "name": "James M.",
+      "location": "Toledo, OH",
+      "condition": "Auto accident recovery",
+      "result": "Accelerated recovery, improved energy levels",
+      "quote": "After a car accident, my doctor recommended physical therapy. While PT helped with some mobility issues, I still struggled with pain and fatigue. I decided to try EES alongside my PT sessions. The combination was incredible - my recovery accelerated, and I felt better overall. Now I continue with EES even after finishing PT."
+    },
+    {
+      "name": "L.K.",
+      "location": "Maumee, OH",
+      "condition": "Fibromyalgia",
+      "result": "Pain reduction, better sleep, improved mental clarity",
+      "quote": "As someone with fibromyalgia, traditional physical therapy was often too painful for me. EES has been a game-changer. I can get therapeutic benefits without the pain and exhaustion that came with PT exercises. Plus, it's helped with my sleep and brain fog - benefits I never got from physical therapy alone."
+    }
+  ],
+  "otherServices": [
+    {
+      "name": "Acupuncture",
+      "slug": "acupuncture",
+      "priority": 2
+    },
+    {
+      "name": "Massage Therapy",
+      "slug": "massage-therapy",
+      "priority": 3
+    },
+    {
+      "name": "Chiropractic",
+      "slug": "chiropractic",
+      "priority": 4
+    },
+    {
+      "name": "Pain Management",
+      "slug": "pain-management",
+      "priority": 5
+    },
+    {
+      "name": "Spa Services",
+      "slug": "spa-services",
+      "priority": 6
+    }
+  ]
+}

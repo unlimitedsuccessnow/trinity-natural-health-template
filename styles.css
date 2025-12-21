@@ -494,8 +494,18 @@ h3 {
 }
 
 .offer-price {
+    font-size: 24px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.benefits-text {
     font-size: 20px;
-    margin-bottom: 30px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    line-height: 1.8;
+    color: var(--white);
 }
 
 .price {

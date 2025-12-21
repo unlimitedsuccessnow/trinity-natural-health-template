@@ -1,0 +1,28 @@
+# MCP Configuration (contains API keys)
+cursor-mcp-config.json
+*.mcp.json
+
+# Environment files
+.env
+.env.local
+
+# API Keys
+*api-key*
+*apikey*
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+

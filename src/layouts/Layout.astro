@@ -1,0 +1,133 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title?: string;
+	description?: string;
+	keywords?: string;
+	ogImage?: string;
+	ogUrl?: string;
+}
+
+const {
+	title = "Physical Therapy Alternative in Perrysburg, OH | Energy Enhancement System vs Physical Therapy",
+	description = "Discover why Energy Enhancement System may be a better alternative to physical therapy in Perrysburg. Compare EES vs physical therapy, costs, benefits, and see real results. Book your first session for $50.",
+	keywords = "alternative to physical therapy perrysburg, natural alternative to physical therapy, EES vs physical therapy, energy healing perrysburg",
+	ogImage = "https://healwithtrinity.com/images/ees-hero.jpg",
+	ogUrl = "https://healwithtrinity.com/alternative-to-physical-therapy-perrysburg"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- Primary Meta Tags -->
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={ogUrl} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImage} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={ogUrl} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={ogImage} />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+		<!-- Global Styles -->
+	</head>
+	<body>
+		<!-- Header Navigation -->
+		<header class="site-header">
+			<div class="container">
+				<nav class="nav-wrapper">
+					<div class="logo">
+						<a href="/">Trinity Natural Health</a>
+					</div>
+					<button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="nav-menu">
+						<li><a href="#about-ees">About EES</a></li>
+						<li><a href="#comparison">Comparison</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#faq">FAQ</a></li>
+						<li><a href="#contact" class="nav-cta">Book Session</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<slot />
+
+		<!-- Footer -->
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer-grid">
+					<div class="footer-col">
+						<h4>Trinity Natural Health</h4>
+						<p>Experience the healing power of Energy Enhancement System technology in Perrysburg, Ohio.</p>
+					</div>
+					<div class="footer-col">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/alternative-to-physical-therapy-perrysburg">Physical Therapy Alternative</a></li>
+							<li><a href="/alternative-to-chiropractic-perrysburg">Chiropractic Alternative</a></li>
+							<li><a href="/alternative-to-massage-therapy-perrysburg">Massage Therapy Alternative</a></li>
+							<li><a href="/alternative-to-pain-management-perrysburg">Pain Management Alternative</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact</h4>
+						<ul>
+							<li>842 W South Boundary</li>
+							<li>Perrysburg, OH 43551</li>
+							<li><a href="tel:419-654-6609">419-654-6609</a></li>
+							<li><a href="mailto:anna@healwithtrinity.com">anna@healwithtrinity.com</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Service Area</h4>
+						<ul>
+							<li>Perrysburg</li>
+							<li>Toledo</li>
+							<li>Maumee</li>
+							<li>Rossford</li>
+							<li>Bowling Green</li>
+							<li>Northwest Ohio</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 Trinity Natural Health. All rights reserved.</p>
+					<p class="disclaimer">This technology does not cure, prevent or treat any disease. All results vary.</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JavaScript -->
+		<script src="/scripts/main.js"></script>
+	</body>
+</html>

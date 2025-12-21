@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "perplexity": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@perplexity-ai/mcp-server"],
+      "env": {
+        "PERPLEXITY_API_KEY": "YOUR_API_KEY_HERE",
+        "PERPLEXITY_RETURN_IMAGES": "true",
+        "PERPLEXITY_DEFAULT_MODEL": "sonar-pro",
+        "PERPLEXITY_MAX_TOKENS": "2048"
+      }
+    }
+  }
+}
+
+

@@ -9,10 +9,10 @@
 
 :root {
     /* Brand Colors - Whole Health Journal */
-    --primary-color: #0A4A7D;      /* Deep blue - primary brand */
-    --primary-dark: #083A61;       /* Darker blue */
-    --primary-light: #1565A3;      /* Lighter blue */
-    --secondary-color: #1976D2;    /* Bright blue - secondary brand */
+    --primary-color: #0061e8;      /* Bright blue - primary brand */
+    --primary-dark: #0050c4;       /* Darker blue */
+    --primary-light: #3381ed;      /* Lighter blue */
+    --secondary-color: #0061e8;    /* Bright blue - secondary brand */
     --accent-color: #FFA726;       /* Warm orange accent - CTA */
 
     /* Neutral Colors */
@@ -30,7 +30,7 @@
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -118,12 +118,12 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-dark);
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1.125rem; }
-h6 { font-size: 1rem; }
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.75rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1.125rem; }
 
 p {
     margin-bottom: var(--spacing-sm);
@@ -1064,7 +1064,7 @@ strong {
    ======================================== */
 
 .cta-section {
-    background: linear-gradient(135deg, #3D2463 0%, #2D1B4E 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: var(--background-white);
     padding: 5rem 0;
 }
@@ -1215,7 +1215,7 @@ strong {
    ======================================== */
 
 .site-footer {
-    background: linear-gradient(135deg, #1F1333 0%, #3D2463 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
     color: var(--background-light);
     padding: var(--spacing-xl) 0 var(--spacing-md);
 }
@@ -1290,9 +1290,9 @@ strong {
 
 @media (max-width: 767px) {
     /* Typography */
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.75rem; }
-    h3 { font-size: 1.375rem; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
 
     /* Navigation */
     .mobile-menu-toggle {

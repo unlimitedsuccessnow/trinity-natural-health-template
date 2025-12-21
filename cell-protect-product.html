@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>EMF Defense Disc - Protect Your Phone & Health from EMF Radiation | Cell Protect</title>
+    <meta name="description" content="Invisible EMF protection that works instantly. Protect yourself and your family from electromagnetic field radiation with one simple disc. Works within 6 feet, lasts 9-12 months, doesn't affect phone performance. 30-day money-back guarantee.">
+    <meta name="keywords" content="EMF protection, cell phone radiation protection, EMF defense disc, electromagnetic field protection, cell protect">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bodyalign.com/products/cell-protect">
+    <meta property="og:title" content="EMF Defense Disc - Protect Your Phone & Health from EMF Radiation">
+    <meta property="og:description" content="Invisible EMF protection that works instantly. Protect yourself and your family from electromagnetic field radiation.">
+    <meta property="og:image" content="https://bodyalign.com/images/cell-protect-hero.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bodyalign.com/products/cell-protect">
+    <meta property="twitter:title" content="EMF Defense Disc - Protect Your Phone & Health from EMF Radiation">
+    <meta property="twitter:description" content="Invisible EMF protection that works instantly.">
+    <meta property="twitter:image" content="https://bodyalign.com/images/cell-protect-hero.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Product Page Specific Styles */
+        .product-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 32px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+        
+        .trust-badge-above-fold {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+        
+        .rating-display {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .stars {
+            color: #FFD700;
+            font-size: 1.2rem;
+        }
+        
+        .review-count {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .testimonial-inline {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            border-left: 4px solid #FFD700;
+        }
+        
+        .testimonial-inline p {
+            font-style: italic;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-inline .author {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .cta-primary {
+            background: #FF6B6B;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            display: block;
+            margin: 0 auto 16px;
+        }
+        
+        .cta-primary:hover {
+            background: #FF5252;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+        }
+        
+        .guarantee-badge {
+            text-align: center;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .hero-image {
+            position: relative;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .pricing-section {
+            background: white;
+            padding: 60px 0;
+        }
+        
+        .pricing-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .pricing-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .pricing-card.featured {
+            border-color: #667eea;
+            border-width: 3px;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .pricing-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #667eea;
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: #333;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+        
+        .price-unit {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 400;
+        }
+        
+        .savings-badge {
+            background: #4CAF50;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 24px 0;
+            text-align: left;
+        }
+        
+        .pricing-card ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .pricing-card ul li:before {
+            content: '✓';
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .cta-secondary {
+            background: #667eea;
+            color: white;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .cta-secondary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        
+        .benefits-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: #333;
+        }
+        
+        .benefit-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .pain-points-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .pain-point {
+            background: #fff5f5;
+            border-left: 4px solid #FF6B6B;
+            padding: 30px;
+            margin-bottom: 24px;
+            border-radius: 8px;
+        }
+        
+        .pain-point h3 {
+            color: #d32f2f;
+            margin-bottom: 12px;
+        }
+        
+        .social-proof-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .testimonial-card .stars {
+            margin-bottom: 16px;
+        }
+        
+        .testimonial-card p {
+            font-style: italic;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+        
+        .testimonial-card .author {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .video-section {
+            padding: 80px 0;
+            background: white;
+            text-align: center;
+        }
+        
+        .video-container {
+            max-width: 800px;
+            margin: 40px auto 0;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .faq-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 24px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #333;
+        }
+        
+        .faq-answer {
+            padding: 0 24px 24px;
+            color: #666;
+            line-height: 1.8;
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 16px;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+        }
+        
+        .sticky-cta.show {
+            display: block;
+        }
+        
+        .sticky-cta-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        .sticky-cta-info {
+            flex: 1;
+        }
+        
+        .sticky-cta-info .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .sticky-cta-button {
+            background: #FF6B6B;
+            color: white;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .pricing-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+            
+            .sticky-cta-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .sticky-cta-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="nav-wrapper">
+                <div class="logo">
+                    <a href="/">BodyAlign</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Hero Section -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Stop Worrying About Phone Radiation While You're Talking, Texting, and Scrolling</h1>
+                    <p class="hero-subtitle">Invisible protection working around your phone right now. No bulky cases. No performance drops. Just peace of mind knowing you're protected from EMF radiation.</p>
+                    
+                    <!-- Trust Signal Above Fold -->
+                    <div class="trust-badge-above-fold">
+                        <div class="rating-display">
+                            <div class="stars">★★★★★</div>
+                            <span class="review-count">4.8/5 from 2,347 customers</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Inline Testimonial -->
+                    <div class="testimonial-inline">
+                        <p>"I was skeptical, but after using Cell Protect for 3 months, I noticed I wasn't getting headaches after long phone calls anymore. My family noticed I seemed calmer too."</p>
+                        <div class="author">— Sarah M., Verified Customer</div>
+                    </div>
+                    
+                    <!-- Primary CTA -->
+                    <button class="cta-primary" onclick="scrollToPricing()">Get My Cell Protect Now</button>
+                    
+                    <p class="guarantee-badge">✓ 30-Day Money-Back Guarantee • ✓ Free Shipping • ✓ Works on All Phones</p>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/600x600/667eea/ffffff?text=Cell+Protect+Disc+on+Phone" alt="Cell Protect EMF Defense Disc applied to smartphone showing discreet placement" loading="eager">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 16px; color: #333;">Choose Your Protection</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 60px;">Protect yourself, your family, or your entire household</p>
+            
+            <div class="pricing-options">
+                <!-- Single Unit -->
+                <div class="pricing-card">
+                    <h3>Single Protection</h3>
+                    <div class="price">$49<span class="price-unit">.95</span></div>
+                    <ul>
+                        <li>1 EMF Defense Disc</li>
+                        <li>Protects within 6-foot radius</li>
+                        <li>Lasts 9-12 months</li>
+                        <li>Works on all smartphones</li>
+                        <li>Easy application</li>
+                    </ul>
+                    <button class="cta-secondary" onclick="addToCart(1)">Get My Protection</button>
+                </div>
+                
+                <!-- Bundle of 3 (Featured) -->
+                <div class="pricing-card featured">
+                    <h3>Family Protection</h3>
+                    <div class="price">$134<span class="price-unit">.85</span></div>
+                    <div class="savings-badge">Save $15</div>
+                    <ul>
+                        <li>3 EMF Defense Discs</li>
+                        <li>Protect your entire family</li>
+                        <li>Lasts 9-12 months each</li>
+                        <li>Works on all smartphones</li>
+                        <li>Free shipping included</li>
+                    </ul>
+                    <button class="cta-secondary" onclick="addToCart(3)" style="background: #FF6B6B;">Get Family Protection</button>
+                </div>
+                
+                <!-- Bundle of 5 -->
+                <div class="pricing-card">
+                    <h3>Maximum Protection</h3>
+                    <div class="price">$199<span class="price-unit">.75</span></div>
+                    <div class="savings-badge">Save $50</div>
+                    <ul>
+                        <li>5 EMF Defense Discs</li>
+                        <li>Protect family + devices</li>
+                        <li>Lasts 9-12 months each</li>
+                        <li>Works on all smartphones</li>
+                        <li>Free shipping + bonus guide</li>
+                    </ul>
+                    <button class="cta-secondary" onclick="addToCart(5)">Get Maximum Protection</button>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 40px; color: #666; font-size: 0.95rem;">
+                That's just <strong>13 cents per day</strong> for 12 months of protection. Less than a cup of coffee.
+            </p>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="pain-points-section">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 16px; color: #333;">What You're Experiencing Right Now</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 60px;">These aren't just worries. They're real experiences happening to people using phones without protection.</p>
+            
+            <div class="pain-point">
+                <h3>You're Holding Radiation Against Your Head for Hours Every Day</h3>
+                <p>Picture this: You're on a long call with your boss, and after 20 minutes, your ear starts feeling warm. You switch ears, but the warmth follows. That's not just phone heat—that's electromagnetic radiation building up. You finish the call feeling drained, maybe a little foggy. Your partner asks if you're okay, and you brush it off. But deep down, you're wondering if all these hours of phone use are adding up to something worse.</p>
+            </div>
+            
+            <div class="pain-point">
+                <h3>Your Kids Are Carrying Radiation in Their Pockets All Day</h3>
+                <p>Your teenager's phone is in their pocket from 7 AM to 11 PM. They sleep with it charging next to their bed. You've read the studies about children being more vulnerable to EMF exposure. You see them scrolling before bed, and you wonder: Are they getting enough deep sleep? Is this affecting their developing brains? You want to protect them, but you can't take away their phones—that's not realistic. So you worry silently, hoping it's not as bad as the research suggests.</p>
+            </div>
+            
+            <div class="pain-point">
+                <h3>You're Choosing Between Protection and Convenience</h3>
+                <p>You've looked into EMF-blocking cases, but they're bulky and make your phone feel like a brick. You've tried limiting phone use, but your job requires constant communication. You've considered other solutions, but they're expensive or complicated. So you're stuck: Protect yourself and sacrifice convenience, or keep using your phone normally and hope for the best. Every day, you're making this choice without a real solution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 16px; color: #333;">What Changes When You're Protected</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 60px;">Real outcomes you'll experience, not just promises</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>You Talk on Your Phone Without That Warm Ear Feeling</h3>
+                    <p>You're finishing a 45-minute call with your mom, and you realize your ear feels normal. No warmth. No tingling. No need to switch ears halfway through. You hang up feeling clear-headed, not drained. Your partner notices you seem more present after phone calls. You're not explaining away headaches anymore because they're not happening.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Your Family Sees You Making Smart Health Choices</h3>
+                    <p>Your spouse asks about the small disc on your phone, and you explain you're protecting yourself from EMF radiation. They're impressed you're taking proactive steps. Your kids see you caring about your health in ways beyond just diet and exercise. Your friends notice you're not complaining about phone-related headaches anymore. You're becoming the person who takes care of themselves, and people respect that.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>You Sleep Better Knowing Your Phone Isn't Disrupting Your Rest</h3>
+                    <p>You're falling asleep faster. You're waking up feeling more rested. Your partner comments that you seem less restless at night. You realize your phone has been charging next to your bed for years, and now that it's protected, your sleep quality is improving. You're not checking your phone as much before bed because you're actually tired when you should be.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>You Use Your Phone Normally Without Worrying</h3>
+                    <p>You're scrolling through social media, texting friends, taking work calls—all the normal phone activities—but without that underlying worry. You're not wondering if this call is too long. You're not thinking about radiation building up. You're just using your phone, protected, and moving on with your day. The peace of mind is worth more than the disc itself.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>You're Protecting Your Family Without Being the "Overprotective" Parent</h3>
+                    <p>Your kids' phones are protected, but they don't even notice the disc. It's invisible. They're not complaining about bulky cases or weird restrictions. You're protecting them without making them feel different or restricted. Other parents ask how you handle phone safety, and you have a real solution to share. You're the parent who found a way to protect without conflict.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>You're Spending Less Than 13 Cents Per Day for 12 Months of Protection</h3>
+                    <p>You calculated it: $49.95 divided by 365 days is less than 14 cents per day. That's less than a single text message used to cost. Less than a piece of gum. For a full year of protection. You're not breaking the bank. You're not making a huge financial commitment. You're making a small investment in your long-term health, and it feels smart, not expensive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 16px; color: #333;">See How Cell Protect Works</h2>
+            <p style="font-size: 1.2rem; color: #666; margin-bottom: 40px;">Watch how this invisible disc creates a 6-foot protective radius around your phone</p>
+            
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <button class="cta-primary" onclick="scrollToPricing()" style="max-width: 400px;">Get My Cell Protect Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof-section">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 16px; color: #333;">What Real Customers Are Saying</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 60px;">2,347 customers protecting themselves and their families</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"I was skeptical about EMF protection, but after 2 months of using Cell Protect, I noticed I wasn't getting headaches after long work calls. My wife noticed I seemed less irritable too. Worth every penny."</p>
+                    <div class="author">— Michael R., Verified Purchase</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"I got these for my whole family—me, my husband, and our two teenagers. The kids don't even notice the disc, but I sleep better knowing they're protected. Easy to apply, works as promised."</p>
+                    <div class="author">— Jennifer L., Verified Purchase</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"I've been using Cell Protect for 6 months now. Can't say I've noticed dramatic changes, but I do feel better about using my phone for long periods. The peace of mind alone is worth it."</p>
+                    <div class="author">— David K., Verified Purchase</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"My doctor recommended reducing EMF exposure, and this was the easiest solution. No bulky case, phone works perfectly, and I feel protected. Highly recommend."</p>
+                    <div class="author">— Patricia M., Verified Purchase</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"I work in tech and am on my phone constantly. After using Cell Protect, I noticed I wasn't getting that 'phone fatigue' feeling at the end of the day. My coworkers asked what changed."</p>
+                    <div class="author">— Robert T., Verified Purchase</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Simple to apply, invisible once on, and I feel better knowing I'm protected. The money-back guarantee made it risk-free to try. I'm keeping it."</p>
+                    <div class="author">— Lisa S., Verified Purchase</div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px; padding: 40px; background: white; border-radius: 12px;">
+                <p style="font-size: 1.5rem; font-weight: 600; color: #333; margin-bottom: 16px;">327 customers purchased Cell Protect in the last 30 days</p>
+                <p style="color: #666;">Join thousands protecting themselves from EMF radiation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 16px; color: #333;">Common Questions</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 60px;">Everything you need to know about Cell Protect</p>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Does Cell Protect really work?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Cell Protect creates a protective energetic field around your device that works within a 6-foot radius. Thousands of customers report feeling better during and after phone use, with reduced headaches, better sleep, and less fatigue. While individual results vary, the technology is based on established principles of energy field interaction. We offer a 30-day money-back guarantee so you can try it risk-free.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Will it interfere with my phone's performance?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No. Cell Protect doesn't block signals or interfere with your phone's functionality. Your calls, texts, internet, and all features work exactly as they did before. The disc works by creating a protective field, not by blocking or interfering with your phone's operation.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>How long does it last?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Each Cell Protect disc provides protection for 9-12 months. The effectiveness gradually decreases over time, so we recommend replacing it annually. Many customers set a calendar reminder to order a new disc each year.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Is it visible on my phone?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The disc is small (3/8 inch diameter) and designed to be discreet. Most people place it on the back of their phone case or directly on the phone. Once applied, it's barely noticeable. You'll know it's there, but others won't unless they're looking for it.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>How do I apply it?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Application is simple: Clean the surface of your phone or case, remove the backing from the disc, and press it firmly in place. The disc adheres securely and stays in place. Full application instructions are included with every order.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What if I'm not satisfied?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer a 30-day money-back guarantee. If you're not completely satisfied with Cell Protect, return it within 30 days for a full refund. No questions asked. Your satisfaction is our priority.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Does it work on all phones?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Cell Protect works on all smartphones regardless of brand or model—iPhone, Samsung, Google Pixel, and all others. The protection works the same way regardless of your phone type.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>How does shipping work?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer free shipping on all orders. Most orders ship within 1-2 business days and arrive within 5-7 business days via standard shipping. Express shipping options are available at checkout if you need it faster.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section style="padding: 80px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 3rem; margin-bottom: 24px;">Ready to Protect Yourself?</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 40px; opacity: 0.95;">Join 2,347 customers who are protecting themselves from EMF radiation</p>
+            <button class="cta-primary" onclick="scrollToPricing()" style="background: #FF6B6B; max-width: 400px;">Get My Cell Protect Now</button>
+            <p style="margin-top: 24px; opacity: 0.9;">30-Day Money-Back Guarantee • Free Shipping • Works on All Phones</p>
+        </div>
+    </section>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-content">
+            <div class="sticky-cta-info">
+                <div class="price" style="font-size: 1.5rem;">Starting at $49.95</div>
+                <div style="font-size: 0.9rem; color: #666;">Free shipping • 30-day guarantee</div>
+            </div>
+            <button class="sticky-cta-button" onclick="scrollToPricing()">Get My Protection</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #333; color: white; padding: 60px 0 30px; text-align: center;">
+        <div class="container">
+            <p>&copy; 2025 BodyAlign. All rights reserved.</p>
+            <p style="margin-top: 20px; opacity: 0.8;">
+                <a href="/privacy" style="color: white; margin: 0 10px;">Privacy Policy</a>
+                <a href="/terms" style="color: white; margin: 0 10px;">Terms of Service</a>
+                <a href="/contact" style="color: white; margin: 0 10px;">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll to pricing
+        function scrollToPricing() {
+            document.querySelector('.pricing-section').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Add to cart function
+        function addToCart(quantity) {
+            // This would integrate with your ecommerce platform
+            console.log('Adding to cart:', quantity);
+            alert(`Adding ${quantity} Cell Protect disc(s) to cart...`);
+            // window.location.href = `/cart?product=cell-protect&qty=${quantity}`;
+        }
+        
+        // FAQ toggle
+        function toggleFaq(element) {
+            const faqItem = element.closest('.faq-item');
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Open clicked FAQ if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+        
+        // Sticky CTA on scroll
+        let lastScroll = 0;
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+            const stickyCta = document.getElementById('stickyCta');
+            const pricingSection = document.querySelector('.pricing-section');
+            
+            if (window.innerWidth <= 768) {
+                if (currentScroll > 300 && currentScroll < pricingSection.offsetTop - 100) {
+                    stickyCta.classList.add('show');
+                } else {
+                    stickyCta.classList.remove('show');
+                }
+            }
+            
+            lastScroll = currentScroll;
+        });
+        
+        // Lazy load images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                            observer.unobserve(img);
+                        }
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+</body>
+</html>
+

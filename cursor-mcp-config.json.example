@@ -18,6 +18,15 @@
       "env": {
         "APIFY_TOKEN": "YOUR_APIFY_API_TOKEN_HERE"
       }
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    },
+    "figma-desktop": {
+      "type": "http",
+      "url": "http://127.0.0.1:3845/mcp",
+      "comment": "Requires Figma desktop app with MCP server enabled in Dev Mode"
     }
   }
 }

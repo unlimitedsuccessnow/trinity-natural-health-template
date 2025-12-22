@@ -188,4 +188,119 @@ For detailed instructions:
 - Perplexity: See `PERPLEXITY_MCP_SETUP.md`
 - Apify: See `APIFY_MCP_SETUP.md`
 
+---
+
+## Figma MCP Setup (2 minutes)
+
+### Option 1: Remote Server (Recommended - No Desktop App Needed)
+
+1. **Configure in Cursor**:
+   - Open Cursor Settings (`Ctrl+,` or `Cmd+,`)
+   - Search for "MCP"
+   - Click "Edit MCP Settings"
+   - Add the Figma configuration (see template below)
+   - Save and restart Cursor
+
+2. **Authenticate**:
+   - After restart, click "Connect" next to Figma
+   - Authorize in your browser
+   - Grant permissions
+
+### Option 2: Desktop Server (Requires Figma Desktop App)
+
+1. **Enable in Figma**:
+   - Open Figma Desktop app
+   - Open a Design file
+   - Switch to **Dev Mode** (toggle in toolbar)
+   - Enable **MCP Server** in right sidebar
+   - Copy the server URL
+
+2. **Configure in Cursor**:
+   - Add the desktop server configuration (see template below)
+   - Save and restart Cursor
+
+## Configuration Template
+
+### Remote Server (Easiest):
+```json
+{
+  "mcpServers": {
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}
+```
+
+### Desktop Server:
+```json
+{
+  "mcpServers": {
+    "figma-desktop": {
+      "type": "http",
+      "url": "http://127.0.0.1:3845/mcp"
+    }
+  }
+}
+```
+
+## Complete Example (All Servers):
+```json
+{
+  "mcpServers": {
+    "perplexity": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@perplexity-ai/mcp-server"],
+      "env": {
+        "PERPLEXITY_API_KEY": "YOUR_API_KEY_HERE",
+        "PERPLEXITY_RETURN_IMAGES": "true",
+        "PERPLEXITY_DEFAULT_MODEL": "sonar-pro"
+      }
+    },
+    "apify": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server"],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_API_TOKEN_HERE"
+      }
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}
+```
+
+## Usage Examples
+
+### Figma MCP
+1. **Get design tokens**:
+   ```
+   Extract the color palette from my Figma design file
+   ```
+
+2. **Get component specs**:
+   ```
+   What are the dimensions and styles of the header component?
+   ```
+
+3. **Sync design to code**:
+   ```
+   Generate CSS variables from my Figma design colors
+   ```
+
+## Troubleshooting
+
+- **Not connecting?** 
+  - For remote: Check internet connection
+  - For desktop: Ensure Figma app is running with file open in Dev Mode
+- **Authentication issues?** Try re-authenticating through Cursor
+- **Can't access files?** Verify you have access in Figma and are authenticated
+
+For detailed instructions, see `FIGMA_MCP_SETUP.md`
+
 

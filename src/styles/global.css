@@ -14,6 +14,7 @@
     --primary-light: #0066ff;      /* Lighter blue */
     --secondary-color: #0052cc;    /* Deep blue - secondary brand */
     --accent-color: #fae714;       /* Bright yellow accent - CTA */
+    --accent-orange: #f0a500;      /* Gold/orange for cost comparison */
 
     /* Neutral Colors */
     --text-dark: #1c1c1c;
@@ -470,7 +471,7 @@ strong {
 
 .highlight-box {
     background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
-    color: var(--background-white);
+    color: var(--background-white) !important;
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     font-weight: 500;
@@ -558,12 +559,13 @@ strong {
 }
 
 .highlight-col {
-    background-color: rgba(45, 95, 93, 0.05);
+    background-color: rgba(240, 165, 0, 0.08);
     font-weight: 500;
 }
 
 .comparison-table thead .highlight-col {
-    background-color: var(--primary-dark);
+    background-color: var(--accent-orange);
+    color: var(--background-white);
 }
 
 /* Key Differences */
@@ -791,7 +793,7 @@ strong {
 }
 
 .pricing-card.featured {
-    border: 3px solid var(--accent-color);
+    border: 3px solid var(--accent-orange);
     transform: scale(1.02);
 }
 
@@ -799,8 +801,8 @@ strong {
     position: absolute;
     top: -15px;
     right: 20px;
-    background-color: var(--accent-color);
-    color: var(--text-dark);
+    background-color: var(--accent-orange);
+    color: var(--background-white);
     padding: 0.5rem 1rem;
     border-radius: var(--radius-md);
     font-weight: 600;
@@ -830,7 +832,7 @@ strong {
 }
 
 .price-highlight {
-    color: var(--accent-color);
+    color: var(--accent-orange);
     font-weight: 700;
     font-size: 1.125rem;
 }

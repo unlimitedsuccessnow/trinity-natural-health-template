@@ -7,7 +7,13 @@
       "Bash(git push)",
       "Bash(find:*)",
       "Bash(npm run dev:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(for file in *.astro)",
+      "Bash(do if grep -q \"Best For\" \"$file\")",
+      "Bash(then echo \"$file has comparison table\")",
+      "Bash(else echo \"$file NO comparison table\")",
+      "Bash(fi)",
+      "Bash(done)"
     ]
   }
 }

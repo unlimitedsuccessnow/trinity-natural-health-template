@@ -327,7 +327,7 @@ strong {
     position: absolute;
     width: 16px;
     height: 4px;
-    top: 10px;
+    top: 8px;
     left: 50%;
     transform: translateX(-50%);
     background: white;
@@ -344,7 +344,7 @@ strong {
     position: absolute;
     width: 14px;
     height: 7px;
-    bottom: 8px;
+    bottom: 6px;
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid white;
@@ -1972,7 +1972,7 @@ strong {
     position: absolute;
     width: 12px;
     height: 3px;
-    top: 7px;
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
     background: white;
@@ -1989,7 +1989,7 @@ strong {
     position: absolute;
     width: 10px;
     height: 5px;
-    bottom: 6px;
+    bottom: 4px;
     left: 50%;
     transform: translateX(-50%);
     border: 1.5px solid white;

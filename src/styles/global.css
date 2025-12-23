@@ -312,20 +312,44 @@ strong {
 .logo-icon {
     width: 32px;
     height: 32px;
-    border-radius: var(--radius-sm);
+    border-radius: 50%;
     background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    position: relative;
 }
 
+/* Smiley face eyes */
+.logo-icon::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 4px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    mask-image: radial-gradient(circle at 25% 50%, black 2px, transparent 2px),
+                radial-gradient(circle at 75% 50%, black 2px, transparent 2px);
+    mask-size: 8px 4px;
+    mask-repeat: no-repeat;
+    mask-position: left center, right center;
+}
+
+/* Smiley face mouth */
 .logo-icon::after {
     content: '';
-    width: 12px;
-    height: 12px;
-    background: white;
-    border-radius: 50%;
+    position: absolute;
+    width: 14px;
+    height: 7px;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid white;
+    border-top: none;
+    border-radius: 0 0 14px 14px;
 }
 
 .logo a {
@@ -1937,8 +1961,40 @@ strong {
 .footer-logo-icon {
     width: 24px;
     height: 24px;
-    border-radius: var(--radius-sm);
+    border-radius: 50%;
     background: var(--primary-color);
+    position: relative;
+}
+
+/* Footer smiley face eyes */
+.footer-logo-icon::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    mask-image: radial-gradient(circle at 25% 50%, black 1.5px, transparent 1.5px),
+                radial-gradient(circle at 75% 50%, black 1.5px, transparent 1.5px);
+    mask-size: 6px 3px;
+    mask-repeat: no-repeat;
+    mask-position: left center, right center;
+}
+
+/* Footer smiley face mouth */
+.footer-logo-icon::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1.5px solid white;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
 }
 
 .footer-logo-text {

@@ -43,6 +43,41 @@ const posts = [
 		date: "Dec 15, 2024",
 		image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800",
 		link: "/chronic-fatigue-treatment-perrysburg"
+	},
+	{
+		title: "Natural Alternatives to Chiropractic Care",
+		category: "Holistic Healing",
+		date: "Dec 12, 2024",
+		image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=800",
+		link: "/alternative-to-chiropractic-perrysburg"
+	},
+	{
+		title: "Beyond Massage Therapy: Natural Healing",
+		category: "Alternative Medicine",
+		date: "Dec 10, 2024",
+		image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80&w=800",
+		link: "/alternative-to-massage-therapy-perrysburg"
+	},
+	{
+		title: "Natural Pain Management Solutions",
+		category: "Pain Relief",
+		date: "Dec 8, 2024",
+		image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=800",
+		link: "/alternative-to-pain-management-perrysburg"
+	},
+	{
+		title: "Chronic Back Pain: Natural Relief Methods",
+		category: "Pain Management",
+		date: "Dec 5, 2024",
+		image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800",
+		link: "/chronic-back-pain-relief-perrysburg"
+	},
+	{
+		title: "Neuropathy Treatment: Natural Approaches",
+		category: "Nerve Health",
+		date: "Dec 3, 2024",
+		image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+		link: "/neuropathy-treatment-perrysburg"
 	}
 ];
 
@@ -122,26 +157,28 @@ const topics = ["EES Technology", "Pain Relief", "Natural Healing", "Chronic Con
 					</article>
 
 					<!-- Post Grid -->
-					<div class="blog-grid" style="grid-template-columns: repeat(2, 1fr);">
+					<div class="blog-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
 						{posts.map(post => (
-							<article class="blog-post-card buoyant-card vitreous">
-								<div class="post-image-wrapper">
-									<img src={post.image} alt={post.title} class="post-image" />
-								</div>
-								<div class="post-content">
-									<span class="post-category mono" style="font-size: 0.625rem;">{post.category}</span>
-									<h3 class="post-title">{post.title}</h3>
-								</div>
-								<div class="post-footer">
-									<span class="post-date">{post.date}</span>
-									<div class="post-arrow">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-											<path d="M5 12h14"/>
-											<path d="m12 5 7 7-7 7"/>
-										</svg>
+							<a href={post.link} style="text-decoration: none; color: inherit;">
+								<article class="blog-post-card buoyant-card vitreous">
+									<div class="post-image-wrapper">
+										<img src={post.image} alt={post.title} class="post-image" />
 									</div>
-								</div>
-							</article>
+									<div class="post-content">
+										<span class="post-category mono" style="font-size: 0.625rem;">{post.category}</span>
+										<h3 class="post-title">{post.title}</h3>
+									</div>
+									<div class="post-footer">
+										<span class="post-date">{post.date}</span>
+										<div class="post-arrow">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+												<path d="M5 12h14"/>
+												<path d="m12 5 7 7-7 7"/>
+											</svg>
+										</div>
+									</div>
+								</article>
+							</a>
 						))}
 					</div>
 

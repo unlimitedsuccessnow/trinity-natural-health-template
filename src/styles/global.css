@@ -8,12 +8,12 @@
    ======================================== */
 
 :root {
-    /* Cobalt Gradient System */
-    --cobalt-gradient: linear-gradient(135deg, #2563eb, #1e3a8a);
-    --cobalt-gradient-hover: linear-gradient(135deg, #3b82f6, #2563eb);
-    --primary-color: #2563eb;      /* Cobalt blue */
-    --primary-dark: #1e3a8a;       /* Deep cobalt */
-    --primary-light: #3b82f6;      /* Light cobalt */
+    /* Purple Gradient System */
+    --cobalt-gradient: linear-gradient(135deg, #7303a3, #480266);
+    --cobalt-gradient-hover: linear-gradient(135deg, #8b5cf6, #7303a3);
+    --primary-color: #480266;      /* Deep purple */
+    --primary-dark: #480266;       /* Deep purple */
+    --primary-light: #7303a3;      /* Light purple */
 
     /* Glassmorphism Effects */
     --vitreous-bg: rgba(255, 255, 255, 0.75);
@@ -22,11 +22,11 @@
     --backdrop-blur: blur(12px) saturate(180%);
 
     /* Buoyant Shadow System */
-    --buoyant-shadow: 0 20px 40px -10px rgba(30, 58, 138, 0.08);
-    --buoyant-shadow-hover: 0 30px 60px -12px rgba(30, 58, 138, 0.15);
-    --shadow-sm: 0 4px 12px rgba(30, 58, 138, 0.05);
-    --shadow-md: 0 8px 20px rgba(30, 58, 138, 0.08);
-    --shadow-lg: 0 12px 35px rgba(30, 58, 138, 0.12);
+    --buoyant-shadow: 0 20px 40px -10px rgba(72, 2, 102, 0.08);
+    --buoyant-shadow-hover: 0 30px 60px -12px rgba(72, 2, 102, 0.15);
+    --shadow-sm: 0 4px 12px rgba(72, 2, 102, 0.05);
+    --shadow-md: 0 8px 20px rgba(72, 2, 102, 0.08);
+    --shadow-lg: 0 12px 35px rgba(72, 2, 102, 0.12);
 
     /* Neutral Colors */
     --text-dark: #1e293b;
@@ -43,13 +43,19 @@
     --slate-900: #0f172a;
 
     /* Accent Colors */
-    --accent-blue: #60a5fa;
-    --accent-indigo: #818cf8;
-    --blue-50: #eff6ff;
-    --blue-100: #dbeafe;
-    --blue-200: #bfdbfe;
-    --blue-600: #2563eb;
-    --blue-700: #1d4ed8;
+    --accent-blue: #7303a3;
+    --accent-indigo: #8b5cf6;
+    --accent-gold: #facd46;
+    --accent-orange: #facd46;
+    --accent-color: #facd46;
+    --secondary-color: #7303a3;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --blue-50: #f5f3ff;
+    --blue-100: #ede9fe;
+    --blue-200: #ddd6fe;
+    --blue-600: #7303a3;
+    --blue-700: #480266;
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -122,7 +128,7 @@ img {
 
 .section-image:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 35px rgba(107, 70, 193, 0.25);
+    box-shadow: 0 12px 35px rgba(72, 2, 102, 0.25);
 }
 
 a {
@@ -231,7 +237,7 @@ strong {
 
 /* Image Overlay Gradient */
 .image-overlay {
-    background: linear-gradient(0deg, rgba(30, 58, 138, 0.4) 0%, transparent 100%);
+    background: linear-gradient(0deg, rgba(72, 2, 102, 0.4) 0%, transparent 100%);
 }
 
 /* Monospace Font Utility */
@@ -320,7 +326,7 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 12px rgba(72, 2, 102, 0.3);
     position: relative;
 }
 
@@ -543,18 +549,18 @@ strong {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    background: linear-gradient(135deg, #facd46 0%, #f59e0b 100%);
     color: #1e293b;
-    box-shadow: 0 4px 20px rgba(251, 191, 36, 0.4);
+    box-shadow: 0 4px 20px rgba(250, 205, 70, 0.4);
     font-weight: 700;
     border: none;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, #fcd34d 0%, #fbbf24 100%);
+    background: linear-gradient(135deg, #fcd34d 0%, #facd46 100%);
     color: #1e293b;
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(251, 191, 36, 0.6);
+    box-shadow: 0 8px 30px rgba(250, 205, 70, 0.6);
 }
 
 .btn-secondary {
@@ -1526,7 +1532,7 @@ strong {
    ======================================== */
 
 .cta-section {
-    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+    background: linear-gradient(135deg, #480266 0%, #2d1b4e 100%);
     color: var(--background-white);
     padding: 5rem 0;
 }
@@ -1541,7 +1547,7 @@ strong {
 .cta-box {
     max-width: 900px;
     margin: 0 auto;
-    background: rgba(37, 99, 235, 0.2);
+    background: rgba(72, 2, 102, 0.2);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
@@ -1552,7 +1558,7 @@ strong {
 
 .cta-box:hover {
     transform: translateY(-8px);
-    box-shadow: 0 25px 70px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 25px 70px rgba(72, 2, 102, 0.4);
     border-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1583,7 +1589,7 @@ strong {
 .price {
     font-size: 2.25rem;
     font-weight: 700;
-    color: #fbbf24;
+    color: #facd46;
 }
 
 .regular-price {

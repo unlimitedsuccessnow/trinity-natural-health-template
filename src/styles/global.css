@@ -90,13 +90,19 @@ html {
 
 body {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.75;
     color: var(--text-medium);
     background-color: var(--background-light);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+}
+
+/* Blog post content - larger, more readable text */
+.section p, .section li {
+    font-size: 1.125rem;
+    line-height: 1.8;
 }
 
 img {

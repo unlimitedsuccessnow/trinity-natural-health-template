@@ -4,301 +4,299 @@ import Layout from '../layouts/Layout.astro';
 const schemaMarkup = {
 	"@context": "https://schema.org",
 	"@type": "WebSite",
-	"@id": "https://wholehealthjournal.com/#website",
-	"url": "https://wholehealthjournal.com",
-	"name": "Whole Health Journal",
-	"description": "Your trusted source for natural health solutions, wellness information, and holistic healing approaches in Northwest Ohio.",
+	"@id": "https://vitreouswellness.com/#website",
+	"url": "https://vitreouswellness.com",
+	"name": "Vitreous Wellness",
+	"description": "Modern wellness insights, holistic health tips, and cutting-edge wellness trends for a balanced life.",
 	"publisher": {
 		"@type": "Organization",
-		"name": "Whole Health Journal"
+		"name": "Vitreous Wellness"
 	}
 };
+
+// Sample blog posts - in a real app, these would come from a CMS or database
+const featuredPost = {
+	title: "The Fluidity of Modern Wellness Practices",
+	excerpt: "Exploring the intersection of mindfulness, cellular health, and the buoyancy of modern wellness approaches. How we build sustainable health for the next decade.",
+	category: "Wellness Philosophy",
+	readTime: "12 Min Read",
+	date: "Dec 15, 2024",
+	author: {
+		name: "Dr. Sarah Mitchell",
+		title: "Wellness Director",
+		avatar: "/images/placeholder.svg"
+	},
+	image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=2000"
+};
+
+const posts = [
+	{
+		title: "Reactive Mindfulness in Daily Practice",
+		category: "Mindfulness",
+		date: "Dec 10, 2024",
+		image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=800"
+	},
+	{
+		title: "The 1% Rule for Sustainable Wellness",
+		category: "Lifestyle",
+		date: "Dec 8, 2024",
+		image: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&q=80&w=800"
+	}
+];
+
+const trending = [
+	{ number: "01", title: "Scaling Meditation for Real-time Inner Peace", category: "Mindfulness", readTime: "5m Read" },
+	{ number: "02", title: "Why Blue Light Affects Your Wellness Journey", category: "Health Science", readTime: "8m Read" },
+	{ number: "03", title: "Refining the Micro-habits in Daily Routines", category: "Lifestyle", readTime: "12m Read" }
+];
+
+const topics = ["Mindfulness", "Nutrition", "Movement", "Sleep Science", "Holistic Health"];
 ---
 
 <Layout
-	title="Whole Health Journal | Natural Health Solutions & Wellness Information for Northwest Ohio"
-	description="Discover natural health solutions, alternative therapies, and holistic wellness approaches. Expert information on Energy Enhancement System, chronic pain relief, natural treatments, and more."
-	keywords="natural health northwest ohio, holistic wellness, alternative therapy, energy enhancement system, chronic pain relief, natural healing perrysburg"
-	ogUrl="https://wholehealthjournal.com"
+	title="Vitreous Wellness | Modern Wellness Insights & Holistic Health"
+	description="Discover modern wellness insights, holistic health practices, and cutting-edge wellness trends. Your guide to mindful living and sustainable health."
+	keywords="wellness blog, holistic health, mindfulness, nutrition, wellness lifestyle, healthy living"
+	ogUrl="https://vitreouswellness.com"
 >
 	<!-- Schema.org structured data -->
 	<script type="application/ld+json" set:html={JSON.stringify(schemaMarkup)} />
 
-	<!-- Hero Section -->
-	<section class="hero">
-		<div class="hero-overlay"></div>
-		<div class="container">
-			<div class="hero-content">
-				<h1 class="hero-title">Your Guide to Natural Health & Wellness in Northwest Ohio</h1>
-				<p class="hero-subtitle">Evidence-based information on alternative therapies, holistic healing, and innovative wellness solutions for chronic pain, fatigue, and whole-body health</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- Introduction Section -->
-	<section class="section introduction">
-		<div class="container">
-			<div class="section-content">
-				<p class="intro-text">Welcome to Whole Health Journal, your trusted resource for exploring <strong>natural health solutions</strong> and <strong>alternative wellness approaches</strong> in Northwest Ohio.</p>
-				<p>We're dedicated to providing evidence-based information about innovative therapies that help people overcome chronic pain, boost energy, and achieve optimal health without relying solely on medications or invasive procedures.</p>
-				<p>Whether you're dealing with chronic back pain, persistent fatigue, neuropathy, or simply seeking alternatives to traditional treatments, you'll find comprehensive, honest comparisons and educational resources here.</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- Featured Technology Section -->
-	<section class="section what-is-ees">
-		<div class="container">
-			<h2>Featured Wellness Technology: Energy Enhancement System</h2>
-			<div class="ees-intro">
-				<img src="/images/placeholder.svg" alt="Energy Enhancement System technology overview" class="section-image" loading="lazy" />
-				<p class="large-text">One of the most exciting developments in alternative wellness is <strong>Energy Enhancement System (EES)</strong> – revolutionary scalar wave technology developed by Dr. Sandra Rose Michael after decades of research in integrated biophysics.</p>
+	<!-- Navigation -->
+	<header class="site-header">
+		<nav class="nav-wrapper">
+			<div class="logo">
+				<div class="logo-icon"></div>
+				<a href="/">VITREO.</a>
 			</div>
 
-			<div class="two-column-grid">
-				<div>
-					<h3>What is Energy Enhancement System?</h3>
-					<p>EES is a cutting-edge technology that generates scalar waves to work at the cellular level, promoting:</p>
-					<ul class="checkmark-list">
-						<li>Cellular regeneration and detoxification</li>
-						<li>DNA repair and telomere lengthening (NASA-validated)</li>
-						<li>Natural pain relief and inflammation reduction</li>
-						<li>Enhanced energy production in mitochondria</li>
-						<li>Improved immune system function</li>
-						<li>Better sleep quality and mental clarity</li>
-					</ul>
-				</div>
-				<div>
-					<h3>Why We're Covering EES Technology</h3>
-					<p>Unlike many alternative therapies, EES has backing from:</p>
-					<ul class="checkmark-list">
-						<li><strong>NASA research</strong> validating cellular benefits</li>
-						<li><strong>Scientific studies</strong> on scalar wave effects</li>
-						<li><strong>Thousands of documented cases</strong> worldwide</li>
-						<li><strong>Media coverage</strong> on NBC, Yahoo, and FOX</li>
-					</ul>
-					<div class="highlight-box" style="margin-top: 1.5rem;">
-						<p><strong>Local Access:</strong> Northwest Ohio residents can experience EES at Trinity Natural Health in Perrysburg – one of Ohio's few certified EES centers.</p>
+			<ul class="nav-menu">
+				<li><a href="#" class="link-underline">Wellness</a></li>
+				<li><a href="#" class="link-underline">Mindfulness</a></li>
+				<li><a href="#" class="link-underline">Nutrition</a></li>
+				<li><a href="#" class="link-underline">About</a></li>
+				<li><a href="#newsletter" class="nav-cta btn-rounded">Subscribe</a></li>
+			</ul>
+
+			<button class="mobile-menu-toggle" aria-label="Toggle menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</nav>
+	</header>
+
+	<!-- Main Content -->
+	<main style="max-width: 1400px; margin: 0 auto; padding: 0 1.5rem; padding-top: 3rem; padding-bottom: 6rem;">
+		<div style="display: grid; grid-template-columns: 1fr; gap: 3rem;">
+			<div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 3rem;">
+
+				<!-- Main Content Area (8 columns) -->
+				<div style="grid-column: span 12; lg:grid-column: span 8;">
+
+					<!-- Featured Post -->
+					<article class="featured-post buoyant-card" style="margin-bottom: 4rem;">
+						<div class="post-image-wrapper">
+							<img src={featuredPost.image} alt={featuredPost.title} class="post-image" loading="eager" />
+							<div class="image-overlay" style="position: absolute; inset: 0;"></div>
+							<span class="post-badge">Featured Article</span>
+						</div>
+						<div class="post-content">
+							<div class="post-meta">
+								<span class="post-category mono">{featuredPost.category}</span>
+								<span class="post-divider">•</span>
+								<span class="post-read-time">{featuredPost.readTime}</span>
+							</div>
+							<h2 class="post-title">{featuredPost.title}</h2>
+							<p class="post-excerpt">{featuredPost.excerpt}</p>
+							<div class="post-author">
+								<div class="author-avatar"></div>
+								<div class="author-info">
+									<span class="author-name">{featuredPost.author.name}</span>
+									<span class="author-title">{featuredPost.author.title}</span>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- Post Grid -->
+					<div class="blog-grid" style="grid-template-columns: repeat(2, 1fr);">
+						{posts.map(post => (
+							<article class="blog-post-card buoyant-card vitreous">
+								<div class="post-image-wrapper">
+									<img src={post.image} alt={post.title} class="post-image" />
+								</div>
+								<div class="post-content">
+									<span class="post-category mono" style="font-size: 0.625rem;">{post.category}</span>
+									<h3 class="post-title">{post.title}</h3>
+								</div>
+								<div class="post-footer">
+									<span class="post-date">{post.date}</span>
+									<div class="post-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14"/>
+											<path d="m12 5 7 7-7 7"/>
+										</svg>
+									</div>
+								</div>
+							</article>
+						))}
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<!-- Alternative Therapy Comparisons Section -->
-	<section class="section comparison">
-		<div class="container">
-			<h2>Comparing Natural Health Alternatives</h2>
-			<p class="section-intro">Not sure which approach is right for you? We provide detailed, unbiased comparisons to help you make informed decisions about your health.</p>
-
-			<div class="scenarios-grid">
-				<div class="scenario-card">
-					<div class="scenario-icon">🏃</div>
-					<h3><a href="/alternative-to-physical-therapy-perrysburg" style="color: var(--primary-color); text-decoration: none;">Alternative to Physical Therapy</a></h3>
-					<p>Traditional PT requires frequent appointments and can be expensive. Discover how cellular-level healing compares to manual therapy and exercises.</p>
-					<a href="/alternative-to-physical-therapy-perrysburg" class="btn btn-secondary" style="margin-top: 1rem;">Read Comparison</a>
 				</div>
 
-				<div class="scenario-card">
-					<div class="scenario-icon">💆</div>
-					<h3><a href="/alternative-to-massage-therapy-perrysburg" style="color: var(--primary-color); text-decoration: none;">Alternative to Massage Therapy</a></h3>
-					<p>Love massage but tired of temporary relief? Learn about approaches that work deeper than surface muscles for longer-lasting relaxation.</p>
-					<a href="/alternative-to-massage-therapy-perrysburg" class="btn btn-secondary" style="margin-top: 1rem;">Read Comparison</a>
-				</div>
+				<!-- Sidebar (4 columns) -->
+				<aside class="sidebar" style="grid-column: span 12; lg:grid-column: span 4;">
 
-				<div class="scenario-card">
-					<div class="scenario-icon">🦴</div>
-					<h3><a href="/alternative-to-chiropractic-perrysburg" style="color: var(--primary-color); text-decoration: none;">Alternative to Chiropractic</a></h3>
-					<p>Seeking alignment and pain relief without manual adjustments? Explore cellular approaches to spinal health and whole-body wellness.</p>
-					<a href="/alternative-to-chiropractic-perrysburg" class="btn btn-secondary" style="margin-top: 1rem;">Read Comparison</a>
-				</div>
-
-				<div class="scenario-card">
-					<div class="scenario-icon">💊</div>
-					<h3><a href="/alternative-to-pain-management-perrysburg" style="color: var(--primary-color); text-decoration: none;">Alternative to Pain Management</a></h3>
-					<p>Concerned about medication dependency or side effects? Discover drug-free options for chronic pain that address root causes, not just symptoms.</p>
-					<a href="/alternative-to-pain-management-perrysburg" class="btn btn-secondary" style="margin-top: 1rem;">Read Comparison</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Condition-Specific Information Section -->
-	<section class="section" style="background-color: var(--background-light);">
-		<div class="container">
-			<h2 style="text-align: center; margin-bottom: var(--spacing-xl);">Natural Solutions for Specific Health Conditions</h2>
-			<p class="section-intro">Struggling with a specific condition? We provide in-depth, research-based information on natural approaches to common health challenges.</p>
-
-			<div class="conditions-list">
-				<div class="condition-item">
-					<h4>🔥 Chronic Back Pain Relief</h4>
-					<p>Millions suffer from chronic back pain. Traditional treatments often focus on symptom management rather than healing. Our comprehensive guide explores natural, drug-free approaches that work at the cellular level to promote actual healing.</p>
-					<a href="/chronic-back-pain-relief-perrysburg" style="font-weight: 600; color: var(--primary-color);">Learn about natural back pain relief →</a>
-				</div>
-
-				<div class="condition-item">
-					<h4>⚡ Chronic Fatigue Treatment</h4>
-					<p>If you're experiencing persistent exhaustion that doesn't improve with rest, the problem may be at the cellular energy production level. Discover approaches that support mitochondrial function and natural energy restoration.</p>
-					<a href="/chronic-fatigue-treatment-perrysburg" style="font-weight: 600; color: var(--primary-color);">Explore chronic fatigue solutions →</a>
-				</div>
-
-				<div class="condition-item">
-					<h4>🧠 Neuropathy Treatment</h4>
-					<p>Peripheral neuropathy causes burning, tingling, and numbness that traditional medicine often only manages with medications. Learn about natural approaches that may support nerve regeneration and improved sensation.</p>
-					<a href="/neuropathy-treatment-perrysburg" style="font-weight: 600; color: var(--primary-color);">Discover neuropathy treatment options →</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Why Whole Health Journal Section -->
-	<section class="section">
-		<div class="container">
-			<h2 style="text-align: center; margin-bottom: var(--spacing-xl);">Why Trust Whole Health Journal?</h2>
-
-			<div class="differences-grid">
-				<div class="difference-card">
-					<div class="difference-icon">📚</div>
-					<h4>Evidence-Based Research</h4>
-					<p>We don't just share opinions. Every article is backed by scientific research, clinical studies, and real-world results from thousands of people.</p>
-				</div>
-
-				<div class="difference-card">
-					<div class="difference-icon">⚖️</div>
-					<h4>Honest Comparisons</h4>
-					<p>We present both sides. Our therapy comparisons include when traditional treatments may be better, not just promoting alternatives.</p>
-				</div>
-
-				<div class="difference-card">
-					<div class="difference-icon">🎯</div>
-					<h4>Local Focus</h4>
-					<p>We highlight what's actually accessible to Northwest Ohio residents, including vetted wellness centers like Trinity Natural Health in Perrysburg.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- About EES at Trinity Natural Health -->
-	<section class="section" style="background-color: var(--background-light);">
-		<div class="container">
-			<h2 style="text-align: center; margin-bottom: var(--spacing-lg);">Experience EES Technology Locally</h2>
-			<div style="max-width: 900px; margin: 0 auto;">
-				<p style="text-align: center; font-size: 1.125rem; margin-bottom: var(--spacing-lg);">While Whole Health Journal is an independent information resource, we're excited to feature <strong>Trinity Natural Health</strong> – Northwest Ohio's premier Energy Enhancement System center.</p>
-
-				<div class="two-column-grid">
-					<div>
-						<h3>Why We Feature Trinity Natural Health</h3>
-						<ul class="checkmark-list">
-							<li>Over 3 years serving the Perrysburg community</li>
-							<li>One of Ohio's few certified EES centers</li>
-							<li>6 zero-gravity chairs with 12 specialized light panels</li>
-							<li>Professional staff with extensive EES knowledge</li>
-							<li>Hundreds of satisfied clients</li>
-							<li>Conveniently located in Perrysburg</li>
-						</ul>
-					</div>
-					<div>
-						<h3>Getting Started</h3>
-						<div class="cost-box">
-							<p><strong>Location:</strong> 842 W South Boundary, Perrysburg, OH 43551</p>
-							<p><strong>Phone:</strong> <a href="tel:419-654-6609">419-654-6609</a></p>
-							<p><strong>Email:</strong> <a href="mailto:anna@healwithtrinity.com">anna@healwithtrinity.com</a></p>
-							<p style="margin-top: 1rem;"><strong>New Client Special:</strong> First session only $50 (regularly $100)</p>
+					<!-- Search -->
+					<div class="search-widget">
+						<input
+							type="text"
+							placeholder="Search wellness insights..."
+							class="search-input"
+						/>
+						<div class="search-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+								<circle cx="11" cy="11" r="8"/>
+								<path d="m21 21-4.3-4.3"/>
+							</svg>
 						</div>
 					</div>
-				</div>
+
+					<!-- Trending -->
+					<section class="trending-widget vitreous">
+						<h4 class="widget-header">
+							<span class="pulse-dot"></span>
+							Trending Now
+						</h4>
+
+						<div class="trending-list">
+							{trending.map(item => (
+								<article class="trending-item">
+									<span class="trending-number mono">{item.number}</span>
+									<h5 class="trending-title">{item.title}</h5>
+									<p class="trending-meta">{item.category} • {item.readTime}</p>
+								</article>
+							))}
+						</div>
+
+						<button class="trending-more">
+							View All Popular Posts
+						</button>
+					</section>
+
+					<!-- Newsletter -->
+					<section id="newsletter" class="newsletter-widget">
+						<div class="newsletter-glow"></div>
+						<div class="newsletter-content">
+							<h4 class="newsletter-title">Join the weekly deep dive.</h4>
+							<p class="newsletter-description">
+								A curated selection of thoughts on wellness, mindfulness, and holistic living delivered every Sunday.
+							</p>
+							<form class="newsletter-form">
+								<input
+									type="email"
+									placeholder="email@address.com"
+									class="newsletter-input"
+								/>
+								<button type="submit" class="newsletter-submit">
+									Subscribe Now
+								</button>
+							</form>
+							<p class="newsletter-disclaimer">No spam. Ever. Just insight.</p>
+						</div>
+					</section>
+
+					<!-- Topics -->
+					<section style="padding: 0 1rem;">
+						<h4 class="widget-header">Topics</h4>
+						<div class="topics-list">
+							{topics.map(topic => (
+								<span class="topic-tag">{topic}</span>
+							))}
+						</div>
+					</section>
+
+				</aside>
 			</div>
 		</div>
-	</section>
+	</main>
 
-	<!-- FAQ Section -->
-	<section id="faq" class="section faq">
-		<div class="container">
-			<h2>Frequently Asked Questions</h2>
-			<div class="faq-list">
-				<div class="faq-item">
-					<button class="faq-question">
-						<span>What is Whole Health Journal?</span>
-						<span class="faq-icon">+</span>
-					</button>
-					<div class="faq-answer">
-						<p>Whole Health Journal is an independent informational resource dedicated to providing evidence-based content about natural health solutions, alternative therapies, and holistic wellness approaches available in Northwest Ohio. We aim to help people make informed decisions about their health by providing honest, comprehensive comparisons and educational content.</p>
-					</div>
-				</div>
-
-				<div class="faq-item">
-					<button class="faq-question">
-						<span>Is Energy Enhancement System scientifically proven?</span>
-						<span class="faq-icon">+</span>
-					</button>
-					<div class="faq-answer">
-						<p>Yes, EES technology has scientific backing including NASA research that validated its ability to repair DNA breaks and lengthen telomeres. Additional studies have documented benefits including improved cellular function, enhanced immune response, and pain reduction. While more research is always beneficial, existing evidence supports the technology's efficacy.</p>
-					</div>
-				</div>
-
-				<div class="faq-item">
-					<button class="faq-question">
-						<span>How is Whole Health Journal different from other health websites?</span>
-						<span class="faq-icon">+</span>
-					</button>
-					<div class="faq-answer">
-						<p>We focus specifically on what's available and accessible to Northwest Ohio residents. Rather than just listing therapies, we provide detailed comparisons with traditional treatments, include honest assessments of when conventional medicine may be better, and highlight vetted local providers. Our content is research-based and designed to genuinely help people make informed health decisions.</p>
-					</div>
-				</div>
-
-				<div class="faq-item">
-					<button class="faq-question">
-						<span>Are the treatments you discuss covered by insurance?</span>
-						<span class="faq-icon">+</span>
-					</button>
-					<div class="faq-answer">
-						<p>Currently, many alternative therapies including EES are not covered by traditional insurance. However, we always include pricing information in our articles so you can make informed decisions. Many people find that the overall cost is competitive with traditional treatments when considering copays, multiple appointments, and long-term effectiveness.</p>
-					</div>
-				</div>
-
-				<div class="faq-item">
-					<button class="faq-question">
-						<span>Can natural therapies replace my doctor's treatment?</span>
-						<span class="faq-icon">+</span>
-					</button>
-					<div class="faq-answer">
-						<p>We always recommend working with your healthcare provider. Natural therapies can often complement traditional medicine or serve as alternatives for certain conditions, but you should never discontinue prescribed treatments without consulting your doctor. Many of our featured therapies work best as part of an integrative approach to health.</p>
-					</div>
-				</div>
-
-				<div class="faq-item">
-					<button class="faq-question">
-						<span>How do I know if alternative therapy is right for me?</span>
-						<span class="faq-icon">+</span>
-					</button>
-					<div class="faq-answer">
-						<p>Start by reading our detailed comparison articles for your specific condition or interest. We outline who may benefit most, when traditional treatments might be better, and what to expect. For EES specifically, Trinity Natural Health offers an affordable first session ($50) so you can experience it without major financial commitment.</p>
-					</div>
-				</div>
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="footer-content">
+			<div class="footer-logo">
+				<div class="footer-logo-icon"></div>
+				<span class="footer-logo-text">VITREO.</span>
+			</div>
+			<p class="footer-copyright mono">© 2024 Vitreous Wellness. Built with Precision.</p>
+			<div class="footer-social">
+				<a href="#" aria-label="Twitter">
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+					</svg>
+				</a>
+				<a href="#" aria-label="Instagram">
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+						<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+					</svg>
+				</a>
 			</div>
 		</div>
-	</section>
+	</footer>
 
-	<!-- JavaScript for FAQ -->
+	<!-- Intersection Observer for Buoyant Cards Animation -->
 	<script is:inline>
 		document.addEventListener('DOMContentLoaded', function() {
-			const faqItems = document.querySelectorAll('.faq-item');
+			const observerOptions = {
+				threshold: 0.1
+			};
 
-			faqItems.forEach(item => {
-				const question = item.querySelector('.faq-question');
-
-				question.addEventListener('click', () => {
-					const isActive = item.classList.contains('active');
-
-					// Close all FAQ items
-					faqItems.forEach(i => i.classList.remove('active'));
-
-					// Open clicked item if it wasn't active
-					if (!isActive) {
-						item.classList.add('active');
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.style.opacity = "1";
+						entry.target.style.transform = "translateY(0)";
 					}
 				});
+			}, observerOptions);
+
+			// Animate buoyant cards on scroll
+			document.querySelectorAll('.buoyant-card').forEach(card => {
+				card.style.opacity = "0";
+				card.style.transform = "translateY(20px)";
+				card.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
+				observer.observe(card);
 			});
+
+			// Mobile menu toggle
+			const menuToggle = document.querySelector('.mobile-menu-toggle');
+			const navMenu = document.querySelector('.nav-menu');
+
+			if (menuToggle && navMenu) {
+				menuToggle.addEventListener('click', () => {
+					navMenu.classList.toggle('active');
+					menuToggle.classList.toggle('active');
+				});
+
+				// Close menu when clicking outside
+				document.addEventListener('click', (e) => {
+					if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+						navMenu.classList.remove('active');
+						menuToggle.classList.remove('active');
+					}
+				});
+
+				// Close menu when clicking a link
+				navMenu.querySelectorAll('a').forEach(link => {
+					link.addEventListener('click', () => {
+						navMenu.classList.remove('active');
+						menuToggle.classList.remove('active');
+					});
+				});
+			}
 		});
 	</script>
 </Layout>

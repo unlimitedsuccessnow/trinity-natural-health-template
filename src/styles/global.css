@@ -1509,7 +1509,11 @@ strong {
 .local-card p,
 .local-card ul {
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.125rem;
+}
+
+.local-card .checkmark-list li {
+    font-size: 1.125rem;
 }
 
 .cities-list {
@@ -1520,7 +1524,7 @@ strong {
 .cities-list li {
     padding: var(--spacing-xs) 0;
     color: var(--text-medium);
-    font-size: 0.9375rem;
+    font-size: 1.125rem;
 }
 
 .map-placeholder {

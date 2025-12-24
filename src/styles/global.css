@@ -325,7 +325,7 @@ strong {
 .logo-icon {
     width: 32px;
     height: 32px;
-    background-image: url('/images/smiley-logo-optimized.svg');
+    background-image: url('/images/smiley-logo2.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1955,7 +1955,7 @@ strong {
 .footer-logo-icon {
     width: 24px;
     height: 24px;
-    background-image: url('/images/smiley-logo-optimized.svg');
+    background-image: url('/images/smiley-logo2.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

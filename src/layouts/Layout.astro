@@ -47,12 +47,17 @@ const {
 		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-		<!-- Preload critical resources -->
-		<link rel="preload" href="/images/smiley-logo-optimized.svg" as="image" />
-
-		<!-- Google Fonts - optimized loading -->
+		<!-- DNS Prefetch and Preconnect for faster font loading -->
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+		<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<!-- Preload critical resources -->
+		<link rel="preload" href="/images/smiley-logo-optimized.svg" as="image" />
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" as="style" />
+
+		<!-- Google Fonts - optimized loading -->
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
 		<noscript>
 			<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />

@@ -326,41 +326,13 @@ strong {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: var(--primary-color);
+    background-image: url('/images/smiley-logo.png');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(72, 2, 102, 0.3);
-    position: relative;
-}
-
-/* Smiling eyes - curved arcs (thicker like emoji) */
-.logo-icon::before {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 4px;
-    top: 8px;
-    left: 6px;
-    background: transparent;
-    border: 2.5px solid white;
-    border-top: none;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 12px 0 0 -2.5px white, 12px 0 0 0 white;
-}
-
-/* Smiley face mouth */
-.logo-icon::after {
-    content: '';
-    position: absolute;
-    width: 14px;
-    height: 7px;
-    bottom: 6px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 2px solid white;
-    border-top: none;
-    border-radius: 0 0 14px 14px;
 }
 
 .logo a {
@@ -1988,37 +1960,9 @@ strong {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: var(--primary-color);
-    position: relative;
-}
-
-/* Footer smiling eyes - curved arcs (thicker like emoji) */
-.footer-logo-icon::before {
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 3px;
-    top: 5px;
-    left: 4px;
-    background: transparent;
-    border: 2px solid white;
-    border-top: none;
-    border-radius: 0 0 6px 6px;
-    box-shadow: 8px 0 0 -2px white, 8px 0 0 0 white;
-}
-
-/* Footer smiley face mouth */
-.footer-logo-icon::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 5px;
-    bottom: 4px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1.5px solid white;
-    border-top: none;
-    border-radius: 0 0 10px 10px;
+    background-image: url('/images/smiley-logo.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .footer-logo-text {

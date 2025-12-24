@@ -334,18 +334,19 @@ strong {
     position: relative;
 }
 
-/* Smiling eyes - curved arcs */
+/* Smiling eyes - curved arcs (thicker like emoji) */
 .logo-icon::before {
     content: '';
     position: absolute;
-    width: 5px;
-    height: 3px;
-    top: 9px;
-    left: 8px;
+    width: 6px;
+    height: 4px;
+    top: 8px;
+    left: 6px;
     background: transparent;
-    border-bottom: 2px solid white;
-    border-radius: 0 0 50% 50%;
-    box-shadow: 10px 0 0 0 white;
+    border: 2.5px solid white;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 12px 0 0 -2.5px white, 12px 0 0 0 white;
 }
 
 /* Smiley face mouth */
@@ -1991,18 +1992,19 @@ strong {
     position: relative;
 }
 
-/* Footer smiling eyes - curved arcs */
+/* Footer smiling eyes - curved arcs (thicker like emoji) */
 .footer-logo-icon::before {
     content: '';
     position: absolute;
     width: 4px;
-    height: 2px;
-    top: 6px;
-    left: 5px;
+    height: 3px;
+    top: 5px;
+    left: 4px;
     background: transparent;
-    border-bottom: 1.5px solid white;
-    border-radius: 0 0 50% 50%;
-    box-shadow: 7px 0 0 0 white;
+    border: 2px solid white;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 8px 0 0 -2px white, 8px 0 0 0 white;
 }
 
 /* Footer smiley face mouth */

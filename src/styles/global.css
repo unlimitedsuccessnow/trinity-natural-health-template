@@ -1747,6 +1747,9 @@ strong {
 .trending-item {
     cursor: pointer;
     transition: opacity var(--transition-fast);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
 }
 
 .trending-item:hover {
@@ -1755,6 +1758,20 @@ strong {
 
 .trending-item:hover .trending-title {
     color: var(--primary-color);
+}
+
+.trending-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+}
+
+.trending-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .trending-number {

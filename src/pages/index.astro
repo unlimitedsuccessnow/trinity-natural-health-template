@@ -16,17 +16,18 @@ const schemaMarkup = {
 
 // Featured wellness content
 const featuredPost = {
-	title: "Energy Enhancement System: The Future of Cellular Wellness",
-	excerpt: "Discover how scalar wave technology is revolutionizing natural healing. Learn about EES benefits, real patient results, and why thousands are choosing this innovative approach to whole-body wellness.",
-	category: "Natural Healing",
-	readTime: "10 Min Read",
-	date: "Dec 20, 2024",
+	title: "Natural Pain Relief Without Medication in Perrysburg",
+	excerpt: "Discover drug-free pain relief solutions using Energy Enhancement System technology. Learn how scalar wave therapy provides effective, natural pain management without medication side effects.",
+	category: "Pain Management",
+	readTime: "7 Min Read",
+	date: "Dec 23, 2024",
 	author: {
 		name: "Trinity Natural Health Team",
 		title: "Wellness Experts",
 		avatar: "/images/placeholder.svg"
 	},
-	image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=2000"
+	image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=2000",
+	link: "/natural-pain-relief-perrysburg"
 };
 
 const posts = [
@@ -82,9 +83,9 @@ const posts = [
 ];
 
 const trending = [
-	{ number: "01", title: "How EES Technology Repairs DNA at the Cellular Level", category: "Science", readTime: "8m Read" },
-	{ number: "02", title: "Natural Pain Relief Without Medication", category: "Pain Management", readTime: "6m Read" },
-	{ number: "03", title: "Neuropathy Treatment: Natural vs Traditional", category: "Nerve Health", readTime: "10m Read" }
+	{ number: "01", title: "How EES Technology Repairs DNA at the Cellular Level", category: "Science", readTime: "8m Read", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=400", link: "/chronic-fatigue-treatment-perrysburg" },
+	{ number: "02", title: "Natural Pain Relief Without Medication", category: "Pain Management", readTime: "6m Read", image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=400", link: "/natural-pain-relief-perrysburg" },
+	{ number: "03", title: "Neuropathy Treatment: Natural vs Traditional", category: "Nerve Health", readTime: "10m Read", image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=400", link: "/neuropathy-treatment-perrysburg" }
 ];
 
 const topics = ["EES Technology", "Pain Relief", "Natural Healing", "Chronic Conditions", "Energy & Vitality"];
@@ -132,29 +133,31 @@ const topics = ["EES Technology", "Pain Relief", "Natural Healing", "Chronic Con
 				<div style="grid-column: span 12; lg:grid-column: span 8;">
 
 					<!-- Featured Post -->
-					<article class="featured-post buoyant-card" style="margin-bottom: 4rem;">
-						<div class="post-image-wrapper">
-							<img src={featuredPost.image} alt={featuredPost.title} class="post-image" loading="eager" />
-							<div class="image-overlay" style="position: absolute; inset: 0;"></div>
-							<span class="post-badge">Featured Article</span>
-						</div>
-						<div class="post-content">
-							<div class="post-meta">
-								<span class="post-category mono">{featuredPost.category}</span>
-								<span class="post-divider">•</span>
-								<span class="post-read-time">{featuredPost.readTime}</span>
+					<a href={featuredPost.link} style="text-decoration: none; color: inherit;">
+						<article class="featured-post buoyant-card" style="margin-bottom: 4rem;">
+							<div class="post-image-wrapper">
+								<img src={featuredPost.image} alt={featuredPost.title} class="post-image" loading="eager" />
+								<div class="image-overlay" style="position: absolute; inset: 0;"></div>
+								<span class="post-badge">Featured Article</span>
 							</div>
-							<h2 class="post-title">{featuredPost.title}</h2>
-							<p class="post-excerpt">{featuredPost.excerpt}</p>
-							<div class="post-author">
-								<div class="author-avatar"></div>
-								<div class="author-info">
-									<span class="author-name">{featuredPost.author.name}</span>
-									<span class="author-title">{featuredPost.author.title}</span>
+							<div class="post-content">
+								<div class="post-meta">
+									<span class="post-category mono">{featuredPost.category}</span>
+									<span class="post-divider">•</span>
+									<span class="post-read-time">{featuredPost.readTime}</span>
+								</div>
+								<h2 class="post-title">{featuredPost.title}</h2>
+								<p class="post-excerpt">{featuredPost.excerpt}</p>
+								<div class="post-author">
+									<div class="author-avatar"></div>
+									<div class="author-info">
+										<span class="author-name">{featuredPost.author.name}</span>
+										<span class="author-title">{featuredPost.author.title}</span>
+									</div>
 								</div>
 							</div>
-						</div>
-					</article>
+						</article>
+					</a>
 
 					<!-- Post Grid -->
 					<div class="blog-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
@@ -211,11 +214,16 @@ const topics = ["EES Technology", "Pain Relief", "Natural Healing", "Chronic Con
 
 						<div class="trending-list">
 							{trending.map(item => (
-								<article class="trending-item">
-									<span class="trending-number mono">{item.number}</span>
-									<h5 class="trending-title">{item.title}</h5>
-									<p class="trending-meta">{item.category} • {item.readTime}</p>
-								</article>
+								<a href={item.link} style="text-decoration: none; color: inherit;">
+									<article class="trending-item">
+										<img src={item.image} alt={item.title} class="trending-image" />
+										<div class="trending-content">
+											<span class="trending-number mono">{item.number}</span>
+											<h5 class="trending-title">{item.title}</h5>
+											<p class="trending-meta">{item.category} • {item.readTime}</p>
+										</div>
+									</article>
+								</a>
 							))}
 						</div>
 

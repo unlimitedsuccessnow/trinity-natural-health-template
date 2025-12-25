@@ -1431,6 +1431,7 @@ strong {
     padding: var(--spacing-md);
     line-height: 1.8;
     color: var(--text-medium);
+    font-size: 1.0625rem;
 }
 
 /* ========================================

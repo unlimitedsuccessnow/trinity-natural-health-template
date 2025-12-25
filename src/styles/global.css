@@ -1233,7 +1233,7 @@ strong {
 }
 
 .price-highlight {
-    color: var(--accent-orange);
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 1.125rem;
 }
